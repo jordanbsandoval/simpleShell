@@ -13,6 +13,10 @@ It should be noted that there are 2 types of Shell and these are:
 
 ### requirements 📋
 
+go to the test folder and compile the program
+
+> cd ./test/
+
 The code is compiled with the ```gcc 4.8.4``` compiler using the ```-Wall -Werror -Wextra``` and ```-pedantic``` flags, therefore to get the executable file use the following command.
 
 
