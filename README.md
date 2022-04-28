@@ -89,10 +89,9 @@ $ ls /home/me/jkdsf ---> (suppose this folder does not exist in the directory in
 ls: cannot access '/home/me/jkdsf': No such file or directory.
 ```
 
-Authors ✒️
+Author ✒️
 
 * [Jordan Buitrago](https://github.com/jordanbsandoval)
-* [Emmanuel Palacio Gaviria](https://github.com/epg01)
 
 Gratitude 🙇‍
 * [Holberton](https://www.holbertonschool.com/co)  :yellow_heart:
