@@ -17,14 +17,14 @@ go to the test folder and compile the program
 
 > cd ./test/
 
-The code is compiled with the ```gcc 4.8.4``` compiler using the ```-Wall -Werror -Wextra``` and ```-pedantic``` flags, therefore to get the executable file use the following command.
+The code is compiled with the ```gcc 4.8.4``` compiler using as parameter the static library, therefore to get the executable file use the following command.
 
 
-> gcc -Wall -Werror -Wextra -pedantic Filename
+> gcc shell.c -L. -lall
 
 or for the second command.
 
-> gcc -Wall -Werror -Wextra -pedantic Filename -o executable-file-name
+> gcc shell.c -L. -lall -o exe
 
 The first command gives us an executable with the name of ```a.out``` and the second with the name of ```executable-file-name```, to run the program use the following command.
 
@@ -32,21 +32,16 @@ The first command gives us an executable with the name of ```a.out``` and the se
 
 or for the second command.
 
-> ./executable-file-name
+> ./exe
 
 ### Example of some commands that we can use.
 
 | Command           | Descripction                                                                                 |
 | ----------------- | -------------------------------------------------------------------------------------------- |
-| ls                | List directory contents                                                                      |
-| file              | Determining a File's Type                                                                    |
-| which             | Display which executable program will be executed                                            |
-| date              | with the  date  command, which displays the current time anddate                             |
-| cal               | A related command is cal which, by default, displays a calendar of the current month.        |
-| free              | To display the amount of free memory, enter the free command                                 |
-| df                | To see the current amount of free space on our disk drives, enter df                         |
-| exit              | Exit command at the shell prompt                                                             |
-| pwd               | Print name of current working directory                                                      |
+| /bin/ls           | List directory contents                                                                      |
+| ./ppid            | Execute an file type executable                                                              |
+| Ctrl + c          | Exit command at the shell prompt                                                             |
+
 
 They work with their respective arguments.
 
@@ -59,7 +54,7 @@ $ ./hsh
 [prompt] [plus a space] [Waiting for characters to enter]
 
 $ (Waiting for characters to enter).
-$ ls
+$ /bin/ls 
      *** List content in current directory ***
 ```
 
