@@ -3,7 +3,7 @@
 int main(void)
 {
 	int i;
-	pid_t hijo;
+	pid_t hi;
 	pid_t padre;
 
 	padre = getpid();
@@ -12,7 +12,10 @@ int main(void)
 	i = 0;
 	while (i < 5)
 	{
-		crear_proceso(hijo);
+		if (_crear_proceso(hi) == -1)
+		{
+			return (1);
+		}
 		i++;
 	}
 	return (0);
